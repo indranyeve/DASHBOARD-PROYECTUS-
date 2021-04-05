@@ -1,0 +1,487 @@
+.titulo-seccion{
+    color: #717171;
+    font-weight: bold;
+}
+
+.team-members{
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    border-radius: 35px;
+    height: 50px;   
+}
+
+.members-pics{
+    height: 80px;
+}
+
+.team-members > .members-pics img{
+    position: absolute;
+    top: -6px; 
+    width:100px;
+}
+.team-members > .members-pics img:nth-child(1){
+    left: 0px;
+    z-index: 9;
+}
+
+.team-members > .members-pics img:nth-child(2){
+    left: 53px;
+    z-index: 10;
+}
+
+.team-members > .members-pics img:nth-child(3){
+    left: 106px;
+    z-index: 11;
+}
+.team-members > .members-pics img:nth-child(4){
+    left: 161px;
+    z-index: 12;
+}
+
+.members-counter >span{
+    color: #753AD7;
+    font-weight: bold;
+}
+
+.member-title{
+    font-size: 21pt;
+    color: #717171;
+    font-weight: 600;
+}
+
+/*PROYECT DESPCIPTION */
+.project-description{
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    border-radius: 15px;
+    margin-top: 3%;
+    font-size: 14pt;
+}
+
+/*USER ACTIONS*/
+.control-actions-user{
+    padding-bottom: 1.5%;
+    border-bottom: 1px solid#ccc;
+}
+.btn-create{
+    background: #753AD7;
+}
+
+.btn-asign{
+    background: #0269D0;
+}
+.btn-select{
+    background: #717171;
+}
+.btn-styles-acctions{
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    border-radius: 35px;
+    color: #fff;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 7px 15px;
+    border: 0;
+}
+/*-----------------------------------------------------------------------------------------------*********/
+
+/**************************************TASK MANAGMENT*****************************************************/
+
+/*-----------------------------------------------------------------------------------------------*********/
+.taks-asigned .task-container{
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    border-radius: 15px;
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+}
+.taks-asigned .task-container:hover{
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,.4);
+    cursor: grab !important;
+}
+
+.custom-control:hover, .custom-checkbox:hover, .options-dropdown:hover, .sorting:hover{
+    cursor: grab !important;
+}
+
+.taks-asigned .team-members-task{
+    padding-left: 0;
+}
+
+.taks-asigned .members-counter-task{
+    padding-right: 25px;
+    padding-top: 7px;
+}
+.taks-asigned .members-pics-task img:nth-child(1){
+    left: -13px !important;
+}
+.tag{
+    width: 219px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 14pt;
+    text-align: center;
+    font-weight: bold;
+}
+.tag-proceso{
+    color: #417505;
+    border:2px solid#417505;
+}
+.tag-completed{
+    color: #0269D0;
+    border:2px solid#0269D0;
+}
+.tag-pending{
+    color: #F5A623;
+    border:2px solid#F5A623;
+}
+.task-name{
+    font-weight: bold;
+}
+
+.task-comments i{
+    color: #E9E9E9;
+    font-size: 30pt;
+}
+.label-item-taks{
+    color: #753AD7;
+    font-weight: bold;
+}
+.taks-asigned .margin-completed-task{
+    margin-left: 1.7em !important;
+    margin-top: .25em !important;
+
+}
+.attatchment-counter img{
+    width: 26px
+}
+
+.taks-asigned  .name-asignment .task-name{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.taks-asigned .sorting{
+    display: none;
+    cursor: -moz-grab !important;
+}
+.taks-asigned .sorting img{
+    width: 40px;
+}
+ /*-----------------------------------------------------------------------------------------------*********/
+
+/********************************************** END TASK MANAGMENT*************************************
+
+-----------------------------------------------------------------------------------------------*********/
+
+/*-----------------------------------------------------------------------------------------------*********/
+
+/**********************************************STARD STEPPER STYLES*************************************
+
+-----------------------------------------------------------------------------------------------*********/
+
+/* Steps */
+.step {
+    position: relative;
+    min-height: 1em;
+    color: gray;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .step + .step {
+    margin-top: 1.5em;
+  }
+  .step > div:first-child {
+    position: static;
+    height: 0;
+  }
+  .step > div:not(:first-child) {
+    margin-left: 2.5em;
+    padding-left: 1em;
+    /*margin-top: 0.5em;*/
+  }
+  .step.step-active {
+    color: #4285f4
+  }
+  .step.step-active .circle {
+    background-color: #753AD7;
+  }
+
+  .step.step-active i{
+      color: #753AD7;
+  }
+  
+  /* Circle */
+  .circle {
+    background: #E9E9E9;
+    position: relative;
+    width: 0.7em;
+    height: 0.7em;
+    line-height: 2.5em;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    /*box-shadow: 0 0 0 3px #fff;*/
+  }
+  
+  /* Vertical Line */
+  .circle:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: -38px;
+    right: 0;
+    bottom: 35px;
+    left: 56%;
+    height: 74px;
+    width: 1px;
+    transform: scale(1, 2);
+    transform-origin: 92% -64%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+  }
+  .step:last-child .circle:after {
+    display: none
+  }
+  
+  /* Stepper Titles */
+  .title {
+    line-height: 3.5em;
+    font-weight: bold;
+  }
+
+  .title span{
+    font-size: 13pt;
+    height: auto;
+    width: 528px;
+   /* border: 1px solid;*/
+    overflow: auto;
+    padding: 0;
+    color: #000;
+    line-height: 1.5em;
+  }
+/*-----------------------------------------------------------------------------------------------*********/
+
+/**********************************************STARD STEPPER STYLES*************************************
+
+-----------------------------------------------------------------------------------------------*********/
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*********/
+
+/**********************************************STARDS COMMENT BOX*********************************************/
+
+/*-----------------------------------------------------------------------------------------------*********/
+.user_avatar {
+    width: auto;
+    height: auto;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    /* margin-right: 20px; */
+  }
+  .user_avatar img {
+    width: 80px;
+    /*height: 100%;*/
+    border-radius: 50%;
+  }
+  
+  .comment_block {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .comment_block .create_new_comment {
+    width: 100%;
+    padding: 20px 35px 0 0;
+  }
+  .comment_block .create_new_comment .input_comment {
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    margin-left: 30px;
+    /*width: calc(85% - 95px);*/
+  }
+  .comment_block .create_new_comment .input_comment textarea {
+    width: 540px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    resize: none;
+  }
+  .comment_block .create_new_comment .input_comment textarea:focus {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #e6e6e6;
+    animation-timing-function:ease-in;
+  }
+
+  .comment_block .create_new_comment .input_comment textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 12pt;
+    font-weight: 500;
+    color: #000000;
+  }
+  .comment_block .create_new_comment .input_comment textarea::-moz-placeholder { /* Firefox 19+ */
+    font-size: 12pt;
+    font-weight: 500;
+    color: #000000;
+  }
+  .comment_block .create_new_comment .input_comment textarea:-ms-input-placeholder { /* IE 10+ */
+    font-size: 12pt;
+    font-weight: 500;
+    color: #000000;
+  }
+  .comment_block .create_new_comment .input_comment textarea:-moz-placeholder { /* Firefox 18- */
+    font-size: 12pt;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  .comment_block .new_comment {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    /*border-top: 1px solid #e6e6e6;*/
+  }
+  .comment_block .new_comment .user_comment {
+    list-style-type: none;
+    padding-left: 27px;
+    width: 93%;
+  }
+  .comment_block .new_comment .comment_body {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 75px);
+    min-height: 65px;
+    margin-left: 30px;
+    padding: 25px 30px;
+    font-size: .9rem;
+    color: #555;
+    background-color: #FFF;
+    border-left: 5px solid #3000D2;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+  }
+  .comment_block .new_comment .comment_body .replied_to {
+    margin: 5px 0px;
+    background-color: #fafafa;
+    border-bottom: 2px solid #f2f2f2;
+    border-radius: 5px;
+  }
+  .comment_block .new_comment .comment_body .replied_to p {
+    padding: 5px;
+  }
+  .comment_block .new_comment .comment_body .replied_to span {
+    color: #6495ED;
+    margin-right: 2px;
+  }
+  .comment_block .new_comment .comment_toolbar {
+    width: 100%;
+  }
+  .comment_block .new_comment .comment_toolbar ul {
+    list-style-type: none;
+    padding-left: 75px;
+    font-size: 0;
+  }
+  .comment_block .new_comment .comment_toolbar ul li {
+    display: inline-block;
+    padding: 5px;
+    font-size: .7rem;
+    color: #d9d9d9;
+  }
+  .comment_block .new_comment .comment_toolbar ul li:hover {
+    cursor: pointer;
+  }
+  .comment_block .new_comment .comment_toolbar .comment_details {
+    display: inline-block;
+    vertical-align: middle;
+    /*width: 70%;*/
+    text-align: left;
+  }
+  .comment_block .new_comment .comment_toolbar .comment_tools {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    text-align: right;
+  }
+  .comment_block .new_comment .comment_toolbar .comment_tools li:hover {
+    color: #CCC;
+  }
+  .comment_block .new_comment .user:hover {
+    color: #6495ED;
+    text-decoration: underline;
+  }
+  .comment_block .new_comment .love:hover {
+    color: #FF6347;
+  }
+  
+/*-----------------------------------------------------------------------------------------------*********/
+
+/**********************************************ENDS COMMENT BOX*********************************************/
+
+/*-----------------------------------------------------------------------------------------------*********/
+
+
+
+
+/*-----------------------------------------------------------------------------------------------*********/
+
+/**********************************************TASK DETAILS*********************************************/
+
+/*-----------------------------------------------------------------------------------------------*********/
+
+.btn-delete{
+    color: red;
+}
+
+.file-name{
+    font-size: 1.2rem;
+}
+.file-details{
+
+}
+
+/*-----------------------------------------------------------------------------------------------*********/
+
+/**********************************************ENDS TASK DETAILS*********************************************/
+
+/*-----------------------------------------------------------------------------------------------*********/
+
+
+
+
+
+
+.custom-checkbox .checkbox-item::before {
+    top: .25rem !important;
+}
+
+
+@media(min-width: 1400px){
+    .task-comments, .completed-task-counter, .attatchment-counter{
+        max-width: 27%;
+    }
+    .task-comments, .completed-task-counter, .attatchment-counter,.name-asignment,.tag{
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width: 1200px){
+    .team-members{
+        max-width: 320px;
+    }
+    .team-members-task{
+        max-width: 120px;
+    }
+
+    .task-comments, .completed-task-counter, .attatchment-counter{
+        max-width: 28%;
+        
+    }
+
+    .task-comments, .completed-task-counter, .attatchment-counter,.name-asignment,.tag{
+        margin-bottom: 2%;
+    }
+}

@@ -1,0 +1,191 @@
+/*
+*
+* ==========================================
+* PROGRES CIRCLES
+* ==========================================
+*
+*/
+
+.progress {
+    width: 100px;
+    height: 100px;
+    background: none;
+    position: relative;
+    margin-bottom: 5%;
+  }
+  
+  .progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.progress-circle{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+  
+  .progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .progress .progress-left {
+    left: 0;
+  }
+  
+  .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+  }
+  
+  .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+  }
+  
+  .progress .progress-right {
+    right: 0;
+  }
+  
+  .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+  }
+  
+  .progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /*
+  *
+  * ==========================================
+  * ENDS PROGRESS CIRCLES
+  * ==========================================
+  *
+  */
+  
+  /*PROJECTS CARDS*/
+  .dashboard-projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .otra-prueba{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /*.project-card{
+    max-width: 31%;
+  }*/
+
+  .shadow {
+    box-shadow: 0px 0px 15px rgba(0,0,0,.1)!important;
+  }
+
+  .estado{
+    margin-top: 14%;
+  }
+  .rounded-lg {
+    border-radius: 1rem;
+  }
+  
+  .text-gray {
+    color: #aaa;
+  }
+  
+  div.h4 {
+    line-height: 1rem;
+  }
+
+  .progress-complete::after{
+    border: 3px solid rgba(2, 105, 208, .42);
+  }
+  .progress-in-process::after{
+    border: 3px solid#BEF97E;
+  }
+  .progress-pendientes::after{
+    border: 3px solid#EEDEC4;   
+  }
+  .border-blue {
+    border-color: #0269D0;
+}
+
+.border-green{
+    border-color:#7ED321;
+}
+.border-orange{
+    border-color:#F5A623;
+}
+
+.progress-value .h4{
+    line-height: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.deadlines .date img{
+    width: 25px;
+    margin-right:15px;
+}
+
+.deadlines .date span{
+    font-size: 16pt;
+    font-weight: bold;
+    color: #753AD7;
+}
+
+.deadlines .date .title-card{
+    font-size: 10pt;
+    font-weight: 100;
+}
+
+.members-pics img{
+    width: 67px;
+}
+
+.members-pics .more-members{
+    width: 67px;
+    height: 67px;
+    background: #fff;
+    border: 1px solid#753AD7;
+    border-radius: 50%;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.members-pics .more-members .fa-plus{
+    font-size: 12pt;
+    color:#753AD7;
+}
+
+@media(min-width: 1200px){
+  .project-card{
+    max-width: 40.333333%;
+  }
+}

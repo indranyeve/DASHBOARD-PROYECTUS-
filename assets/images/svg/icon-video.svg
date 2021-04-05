@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.999" height="43.821" viewBox="0 0 32.999 43.821">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="32.999" height="43.821" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Component_34_1" data-name="Component 34 – 1" clip-path="url(#clip-path)">
+    <g id="file-9" transform="translate(0.5 0.5)">
+      <path id="Union_10" data-name="Union 10" d="M16,42.821H0V0H21.484V10.514H32V42.821ZM10.294,32.7,16,29.41,21.7,26.116,16,22.822l-5.705-3.294Z" transform="translate(0 0)" fill="#ffd758" stroke="#d4d4d4" stroke-width="1"/>
+      <path id="Path_266" data-name="Path 266" d="M296.3,10.514,285.784,0V10.514Z" transform="translate(-264.3 0)" fill="#753ad7"/>
+      <path id="Path_267" data-name="Path 267" d="M166.878,220.676l5.705-3.294,5.705-3.294-5.705-3.294-5.705-3.294Z" transform="translate(-156.584 -187.971)" fill="#005ece"/>
+    </g>
+    <path id="Polygon_3" data-name="Polygon 3" d="M9.532,1.481a1,1,0,0,1,1.728,0l8.654,14.836a1,1,0,0,1-.864,1.5H1.741a1,1,0,0,1-.864-1.5Z" transform="translate(27.601 14.615) rotate(90)" fill="#753ad7"/>
+  </g>
+</svg>
